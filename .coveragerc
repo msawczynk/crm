@@ -1,0 +1,2 @@
+[run]
+omit = gen_docs_index.py

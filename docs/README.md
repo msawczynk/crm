@@ -1,3 +1,4 @@
 # Documentation
 
-No documentation yet.
+## Table of Contents
+- [architecture.md](./architecture.md)
