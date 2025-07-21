@@ -1,4 +1,7 @@
+# pragma: no cover
 import pathlib
+
+# This script is used only during development and is excluded from coverage.
 
 docs_path = pathlib.Path("docs")
 readme_path = docs_path / "README.md"
