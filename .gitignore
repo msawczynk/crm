@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.cache/
+.poetry/
+.env
+.env.*
+__pypackages__/

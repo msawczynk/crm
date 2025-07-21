@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "crm"
+version = "0.1.0"
+description = "Self-hosted website ingestion and citation service"
+authors = ["Warlack <warlack@example.com>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+packages = [
+    {include = "crawler"},
+    {include = "parser"},
+    {include = "ingestion"},
+    {include = "retrieval"},
+    {include = "api"},
+    {include = "scheduler"},
+    {include = "cli"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+black = "*"
+ruff = "*"
+mypy = "*"
+
+[tool.poetry.scripts]
+crm-cli = "cli.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = 3.11
+strict = true
